@@ -12,15 +12,39 @@ body {
 
 .gradient-bg {
   background-image: linear-gradient(to bottom, navy, rgb(68, 68, 68));
+  overflow-x: hidden;
 }
 
+main {
+  max-width: 55em;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: magenta;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+  color: red;
+}
+
+em {
+  color: plum;
+}
 
 
 /* Default Nav style */
 .topnav {
   display: block;
   background-color: rgb(44, 42, 42);
-  width: 100%;
   padding: 0.5em;
 }
 
@@ -29,7 +53,7 @@ body {
   flex-direction: row;
   list-style-type: none;
   padding: 0;
-  font-size: 1.5em;
+  font-size: 1.2em;
   align-items: flex-start;
 }
 .site-nav li {
@@ -41,7 +65,12 @@ body {
   .site-nav {
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
   } 
+
+  .site-nav li {
+    padding-left: 0.6em;
+  }
   
 }
 
@@ -50,6 +79,10 @@ body {
 .name {
   padding: 1em;
 }
+
+.name i {
+
+  font-size: 0.9em;}
 
 .about {
   color: white;
@@ -63,9 +96,59 @@ body {
 
 .description {
   font-size: 1em;
-  margin: 0 20% 0 20%;
+  margin: 0;
 }
 
 
 /* Projects */
+.projects {
+  color: white;
+  margin-top: 5em;
+}
 
+.projects h3 {
+  text-align: center;
+  font-size: 2em;
+  text-decoration: underline;
+}
+
+.project-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+
+.project-block {
+  background-color: rgb(46, 46, 46);
+  border: 2px white solid;
+  border-radius: 5%;
+  padding: 2em;
+}
+
+.project-img {
+  justify-self: center;
+  width: 10em;
+  height: auto;
+  padding-left: 0.5em;
+}
+
+.project-header {
+  background-color: white;
+  padding: 1em;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  padding: 1em;
+  background-color: rgb(44, 42, 42);
+  margin-top: 2em;
+  text-align: center;
+}
+
+.footer a {
+  color: pink;
+  text-decoration: underline;
+}

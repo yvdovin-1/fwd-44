@@ -5,38 +5,78 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Products</title>
 	<link rel="stylesheet" href="homepage.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 
-<body class="gradient-bg">
-
+<body>
+<div class="gradient-bg">
   <header>
-	  <div class="topnav">
+	  <section class="topnav" id="home">
 		  <nav>
 			  <ul class="site-nav">
-				  <li>Home</li>
-					<li>About</li>
-					<li>Projects</li>
-					<li>Contact</li>
+				  <li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
-		</div>
+		</section>
 	</header>
 
 	<main> 
-	  <div class="about" id="about">
+	  <section class="about" id="about">
 		  <div class="name">
 		    <h1>Yegor Vdovin - <i>Web Developer</i></h1>
 		  </div>
 			<h2>About</h2>
-			<p class="description">Welcome to my page! My name is Yegor, I'm a Front End Web Development student at BCIT. I'm pursuing the family business as my father is a full-stack developer and this program is a stepping stone to becoming a full-stack developer myself one day!</p>
+			<p class="description">Welcome to my page! My name is Yegor, I'm a <em>Front End Web Development</em> student at BCIT. I'm pursuing the family business as my father is a full-stack developer and this program is a stepping stone to becoming a full-stack developer myself one day!</p>
 			<br>
 			<p class="description">When I'm not coding or studying, I enjoy cooking, watching movies and TV of all genres, and hanging out with my critters (I have 2 cats and a dog). If the weather is nice, I also enjoy hikes and working on my motorbike.
-		</div>
+		</section>
+
+		<section class="projects" id="projects">
+		  <h3>Projects</h3>
+			<div class="project-wrapper">
+			  <article class="project-block">
+				  <a href="#">
+					  <img class="project-img" src="./img/under-construction_geek_man_01.svg">
+					  <p class="project-header">Country Website</p>
+					</a>
+				</article>
+				<article class="project-block">
+				  <a href="#">
+					  <img class="project-img" src="./img/under-construction_geek_man_01.svg">
+					  <p class="project-header">JavaScript Game</p>
+					</a>
+				</article>
+				<article class="project-block">
+				  <a href="#">
+					  <img class="project-img" src="./img/under-construction_geek_man_01.svg">
+					  <p class="project-header">Movie Database</p>
+					</a>
+				</article>
+				<article class="project-block">
+				  <a href="#">
+					  <img class="project-img" src="./img/under-construction_geek_man_01.svg">
+					  <p class="project-header">WordPress Sites</p>
+					</a>
+				</article>
+				<article class="project-block">
+				  <a href="#">
+					  <img class="project-img" src="./img/under-construction_geek_man_01.svg">
+					  <p class="project-header">Shopify Store</p>
+					</a>
+				</article>
+			</div>
+		</section>
 	</main>
 
   <footer>
+	  <section class="footer" id="contact">
+		  <p class="contact">You can contact me <a href="#">here</a></p>
+		</section>
 	</footer>
-
+</div>
 </body>
 </html>
