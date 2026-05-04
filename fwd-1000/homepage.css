@@ -1,0 +1,71 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Archivo Black", serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: white;
+  margin: 0;
+}
+
+.gradient-bg {
+  background-image: linear-gradient(to bottom, navy, rgb(68, 68, 68));
+}
+
+
+
+/* Default Nav style */
+.topnav {
+  display: block;
+  background-color: rgb(44, 42, 42);
+  width: 100%;
+  padding: 0.5em;
+}
+
+.site-nav {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.5em;
+  align-items: flex-start;
+}
+.site-nav li {
+  padding-left: 1em;
+}
+
+/* Mobile - Nav */
+@media (max-width: 50em) {
+  .site-nav {
+    display: flex;
+    justify-content: space-around;
+  } 
+  
+}
+
+
+/* About */
+.name {
+  padding: 1em;
+}
+
+.about {
+  color: white;
+  text-align: center;
+}
+
+.about h2 {
+  text-decoration: underline;
+  font-size: 2.5em;
+}
+
+.description {
+  font-size: 1em;
+  margin: 0 20% 0 20%;
+}
+
+
+/* Projects */
+
