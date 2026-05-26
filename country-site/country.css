@@ -21,6 +21,11 @@ button:hover {
 	-webkit-text-stroke: 0px;
 }
 
+:focus-visible {
+  outline: 3px solid gold;
+	outline-offset: 3px;
+}
+
 
 
 /*------------------ Body ------------------*/
@@ -107,6 +112,8 @@ body {
 }
 
 
+/*------ Homepage ------*/
+
 .brief {
   font-family: var(--sub-font);
 	font-size: 1.75rem;
@@ -114,7 +121,8 @@ body {
 	margin: auto;
 	margin-top: 8rem;
 	padding: 1rem 2.5rem 1rem 2.5rem;
-	border: solid 2px gold;
+	background-color: #0059b8;
+	border: solid 3px gold;
 	border-radius: 20px;
 }
 
@@ -137,7 +145,8 @@ body {
 }
    
 .updates-form {
-  background-color: royalblue;
+  background-color: #0059b8;
+	border: 3px solid gold;
 	font-family: var(--sub-font);
 	font-size: 1.5rem;
 	color: white;
@@ -180,8 +189,316 @@ body {
 	font-size: 2rem;
 	padding: 1rem 2rem 1rem 2rem;
 	border-radius: 15px;
-	border: 2px solid #0059b8;
 }
+
+
+/*------ History ------*/
+
+.history-banner {
+  display: flex;
+  justify-content: center;
+	height: 48rem;
+}
+
+.history-banner img {
+  width: 100%;
+  object-fit: cover;
+	object-position: center;
+}
+.quote {
+  position: absolute;
+	text-align: center;
+  color: white;
+	background-color: rgb(0, 89, 184, 0.5);
+	top: 40%;
+	backdrop-filter: blur(1px);
+	border-radius: 50px;
+}
+
+.quote h1 {
+  font-size: 2.5rem;
+}
+
+.quote h2 {
+  font-size: 1.75rem;
+}
+
+.foreword {
+  text-align: center;
+	color: white;
+	margin: auto;
+	margin-top: 4rem;
+	max-width: 60%;
+	padding: 1.5rem;
+	background-color: #0059b8;
+	border-radius: 40px;
+	border: 3px solid gold;
+}
+
+.foreword h3 {
+  font-size: 2.5rem;
+	text-decoration: underline;
+}
+
+.foreword p {
+  font-size: 1.75rem;
+	text-align: left;
+}
+
+.history-grid {
+  display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin-top: 4rem;
+}
+
+.grid-text {
+  padding: 2rem;
+}
+
+.grid-text h4 {
+  font-size: 2rem;
+	text-align: center;
+	text-decoration: underline;
+	font-weight: 700;
+	font-family: var(--main-font);
+	color: #0059b8;
+}
+
+.grid-text p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: var(--sub-font);
+	background-color: rgb(0, 89, 184, 0.5);
+	border-radius: 40px;
+	padding: 1.5rem;
+	margin: 0 2rem 0 2rem;
+  color: white;
+}
+
+.grid-item img{
+  object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.grid-item video {
+  width: 100%;
+	height: 100%;
+}
+
+.img-4 {
+  object-fit:fill;
+  object-position: center;
+	max-height: 38rem;
+}
+
+
+
+
+
+/*------ Landmarks ------*/
+.landmarks-banner {
+  display: flex;
+	justify-content: center;
+	max-height: 18rem;
+	margin-bottom: 3rem;
+}
+
+.landmarks-banner img {
+  width: 100%;
+	object-fit: cover;
+	object-position: center;
+	filter: brightness(0.5) blur(2px);
+}
+
+.banner-text {
+  position: absolute;
+	top: 6rem;
+	color: white;
+	font-family: var(--main-font);
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.banner-text p {
+  
+	font-family: var(--sub-font);
+}
+
+.landmark-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 12rem;
+	grid-auto-flow: dense;
+	gap: 1rem;
+	margin: 0 1rem 0 1rem;
+}
+
+.landmark-grid-item {
+  position: relative;
+}
+
+.landmark-grid-item h2 {
+ color: white;
+  position: absolute;
+	top: 3rem;
+	left: 55%;
+	transform: translate(-50%, -50%);
+	font-family: var(--main-font);
+	font-weight: 400;
+	font-size: 2rem;
+}
+
+.landmark-grid-item img {
+  display: block;
+	border-radius: 20px;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.opera {
+	grid-row: span 3;
+}
+
+.square {
+  grid-row: span 4;
+}
+
+.st-michaels {
+  grid-row: span 3;
+}
+
+.nest {
+  order: 2;
+	grid-column: 1;
+	grid-row: 3;
+	grid-row: span 2;
+}
+
+.monument {
+  grid-column: 3;
+  grid-row: span 3;
+}
+
+.st-sophia {
+  grid-column: 2;
+	grid-row: span 2;
+}
+
+
+/*------ Cuisine ------*/
+
+.cuisine-banner {
+  display: flex;
+	justify-content: center;
+	max-height: 18rem;
+	margin-bottom: 3rem;
+}
+
+.cuisine-banner img {
+  width: 100%;
+	object-fit: cover;
+	object-position: center;
+	filter: brightness(0.5) blur(2px);
+}
+
+.cuisine-grid {
+  display: grid;
+	position: relative;
+	overflow: hidden;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: auto;
+}
+
+.cuisine-item {
+  display: flex;
+	position: relative;
+	margin: 1rem;
+	padding: 2rem;
+}
+
+.cuisine-item h2 {
+  color: white;
+  position: absolute;
+	top: 3rem;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: var(--main-font);
+	font-weight: 400;
+	font-size: 2rem;
+}
+
+.cuisine-item img {
+  display: block;
+	border-radius: 20px;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+
+/*------ Credits ------*/
+
+.credits-banner {
+  display: flex;
+	justify-content: center;
+	max-height: 18rem;
+	margin-bottom: 3rem;
+}
+
+.credits-banner img {
+  width: 100%;
+	object-fit: cover;
+	object-position: center;
+	filter: brightness(0.5) blur(2px);
+}
+
+.credits-banner h1 {
+  padding-top: 2rem;
+}
+
+.credits-body {
+  margin: auto;
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+	overflow-x: auto;
+	width: auto;
+}
+
+.credits-table {
+  margin: auto;
+  padding: 2rem;
+	background-color: grey;
+	border: 2px solid gold;
+  border-collapse: collapse;
+	table-layout: fixed;
+}
+
+.credits-table th {
+  font-family: var(--main-font);
+	color: gold;
+	font-size: 2rem;
+	text-align: right;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	padding: 1.5rem;
+}
+
+.credits-table td {
+  font-family: var(--sub-font);
+	color: white;
+	font-size: 1.5rem;
+  border-right: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+td a {
+  word-break: break-word;
+}
+
 
 
 
@@ -257,6 +574,9 @@ body {
 		border: 2px solid gold;
 	}
 
+  .quote h1 {
+	  text-align: center;
+	}
 
 
 /*--------- Main ---------*/
@@ -306,6 +626,157 @@ body {
 	   margin-top: 3rem;
 	 }
    
+   .foreword {
+	   max-width: 100%;
+	 }
+
+	 .foreword h3 {
+	   font-size: 1.5rem;
+	 }
+
+	 .foreword p {
+	   font-size: 1.25rem;
+	 }
+
+   .history-grid {
+	   grid-template-columns: 1fr;
+	 }
+
+   .grid-item {
+	   padding: 0;
+	 }
+
+   .grid-text {
+	   padding: 0;
+		 padding-bottom: 4rem;
+	 }
+
+   .grid-text p {
+	   font-size: 1rem;
+		 
+	 }
+
+	 .grid-item img {
+	   height: auto;
+		 padding: 0;
+	 }
+
+   .img-2 {
+	   order: 3;
+	 }
+
+   .text-2 {
+     order: 4;
+   }
+
+	 .img-3 {
+	   order: 5;
+	 }
+
+	 .text-3 {
+	   order: 6;
+	 }
+
+	 .img-4 {
+	   order: 7;
+	 }
+
+	 .text-4 {
+	   order: 8;
+	 }
+
+   .landmarks-banner {
+	   min-height: 18rem;
+	 }
+
+	 .landmarks-banner h1 {
+	   font-size: 2.5rem;
+	 }
+
+	 .landmarks-banner p {
+	   font-size: 1.1rem;
+	 }
+
+   .landmark-grid {
+	   grid-template-columns: repeat(1, 1fr);
+		 grid-auto-rows: auto;
+		 margin: 0;
+	 }
+
+   .opera,
+	 .square,
+	 .monument,
+	 .nest,
+	 .st-michaels,
+	 .st-sophia {
+	   grid-row: auto;
+		 grid-column: auto;
+		 order: initial;
+	 }
+   
+   .landmark-grid-item h2 {
+	   font-size: 1.5rem;
+	 }
+
+	 .landmark-grid-item img {
+	   height: auto;
+		 padding: 0 1rem 0 1rem;
+		 border-radius: 0;
+	 }
+
+   .cuisine-banner {
+	   min-height: 18rem;
+	 }
+
+	 .cuisine-banner h1 {
+	   font-size: 2.5rem;
+	 }
+
+	 .cuisine-banner p {
+	   font-size: 1.1rem;
+	 }
+
+   .cuisine-grid {
+	   grid-template-columns: repeat(1, 1fr);
+		 margin: 0;
+	 }
+
+	 .cuisine-item {
+	   margin: 0;
+	 }
+
+	 .cuisine-item img {
+	   height: 100%;
+		 padding: 0;
+	 }
+
+   .credits-banner {
+	   min-height: 18rem;
+	 }
+
+	 .credits-banner h1 {
+	   font-size: 2.5rem;
+	 }
+
+   .credits-body {
+	   margin-top: 3rem;
+	 }
+
+	 .credits-table {
+	   width: auto;
+		 height: auto;
+	 }
+
+	 .credits-table th {
+	   font-size: 1rem;
+		 text-align: right;
+		 font-weight: 400;
+	 }
+
+	 .credits-table td {
+	   font-size: 0.8rem;
+		 word-break: break-all;
+	 }
 
 /*--------- Footer ---------*/
 
