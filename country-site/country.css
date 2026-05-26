@@ -21,6 +21,11 @@ button:hover {
 	-webkit-text-stroke: 0px;
 }
 
+:focus-visible {
+  outline: 3px solid gold;
+	outline-offset: 3px;
+}
+
 
 
 /*------------------ Body ------------------*/
@@ -246,10 +251,6 @@ body {
 	margin-top: 4rem;
 }
 
-.grid-item {
-  
-}
-
 .grid-text {
   padding: 2rem;
 }
@@ -333,6 +334,21 @@ body {
 	margin: 0 1rem 0 1rem;
 }
 
+.landmark-grid-item {
+  position: relative;
+}
+
+.landmark-grid-item h2 {
+ color: white;
+  position: absolute;
+	top: 3rem;
+	left: 55%;
+	transform: translate(-50%, -50%);
+	font-family: var(--main-font);
+	font-weight: 400;
+	font-size: 2rem;
+}
+
 .landmark-grid-item img {
   display: block;
 	border-radius: 20px;
@@ -390,14 +406,28 @@ body {
 
 .cuisine-grid {
   display: grid;
+	position: relative;
+	overflow: hidden;
 	grid-template-columns: repeat(4, 1fr);
 	grid-auto-rows: auto;
 }
 
 .cuisine-item {
   display: flex;
+	position: relative;
 	margin: 1rem;
 	padding: 2rem;
+}
+
+.cuisine-item h2 {
+  color: white;
+  position: absolute;
+	top: 3rem;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: var(--main-font);
+	font-weight: 400;
+	font-size: 2rem;
 }
 
 .cuisine-item img {
@@ -411,6 +441,64 @@ body {
 
 
 /*------ Credits ------*/
+
+.credits-banner {
+  display: flex;
+	justify-content: center;
+	max-height: 18rem;
+	margin-bottom: 3rem;
+}
+
+.credits-banner img {
+  width: 100%;
+	object-fit: cover;
+	object-position: center;
+	filter: brightness(0.5) blur(2px);
+}
+
+.credits-banner h1 {
+  padding-top: 2rem;
+}
+
+.credits-body {
+  margin: auto;
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+	overflow-x: auto;
+	width: auto;
+}
+
+.credits-table {
+  margin: auto;
+  padding: 2rem;
+	background-color: grey;
+	border: 2px solid gold;
+  border-collapse: collapse;
+	table-layout: fixed;
+}
+
+.credits-table th {
+  font-family: var(--main-font);
+	color: gold;
+	font-size: 2rem;
+	text-align: right;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	padding: 1.5rem;
+}
+
+.credits-table td {
+  font-family: var(--sub-font);
+	color: white;
+	font-size: 1.5rem;
+  border-right: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+td a {
+  word-break: break-word;
+}
+
 
 
 
@@ -625,7 +713,10 @@ body {
 		 grid-column: auto;
 		 order: initial;
 	 }
-
+   
+   .landmark-grid-item h2 {
+	   font-size: 1.5rem;
+	 }
 
 	 .landmark-grid-item img {
 	   height: auto;
@@ -643,6 +734,48 @@ body {
 
 	 .cuisine-banner p {
 	   font-size: 1.1rem;
+	 }
+
+   .cuisine-grid {
+	   grid-template-columns: repeat(1, 1fr);
+		 margin: 0;
+	 }
+
+	 .cuisine-item {
+	   margin: 0;
+	 }
+
+	 .cuisine-item img {
+	   height: 100%;
+		 padding: 0;
+	 }
+
+   .credits-banner {
+	   min-height: 18rem;
+	 }
+
+	 .credits-banner h1 {
+	   font-size: 2.5rem;
+	 }
+
+   .credits-body {
+	   margin-top: 3rem;
+	 }
+
+	 .credits-table {
+	   width: auto;
+		 height: auto;
+	 }
+
+	 .credits-table th {
+	   font-size: 1rem;
+		 text-align: right;
+		 font-weight: 400;
+	 }
+
+	 .credits-table td {
+	   font-size: 0.8rem;
+		 word-break: break-all;
 	 }
 
 /*--------- Footer ---------*/
